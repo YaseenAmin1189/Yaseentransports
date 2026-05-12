@@ -1,0 +1,78 @@
+.newsl {
+  background: linear-gradient(rgba(0, 46, 91, 0.9), rgba(0, 46, 91, 0.9)), url('../../assets/images/bg-truck.jpg'); /* Use a nice background image if you have one */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+}
+
+
+.newslContainer h1 {
+  font-size: 45px;
+  font-weight: 800;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.newslContainer h1 span {
+  color: #ff5e14; /* Your orange theme color */
+}
+
+/* Decorative Divider */
+.decorativeDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.decorativeDivider .line {
+  height: 2px;
+  width: 100px;
+  background-color: #ff5e14;
+}
+
+.decorativeDivider i {
+  font-size: 24px;
+  color: #ff5e14;
+}
+
+/* Professional Static Badges */
+.staticBadges {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.badgeItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.badgeItem i {
+  font-size: 30px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.badgeItem p {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .staticBadges {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .newslContainer h1 {
+    font-size: 30px;
+  }
+}

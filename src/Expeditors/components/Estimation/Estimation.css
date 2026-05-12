@@ -1,0 +1,144 @@
+
+.estimIcon {
+  font-size: 50px;
+  color: #ff5e14; /* Your theme orange */
+  margin: 20px 0;
+  transition: 0.3s ease;
+}
+
+.estim2Box:hover .estimIcon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.estim2Box h1 {
+  font-size: 40px;
+  opacity: 0.1; /* Makes the number (01, 02) look like a background watermark */
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.estim2Box {
+  position: relative; /* Needed for the watermark numbers */
+  padding: 40px 20px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+
+
+
+.estim .estim1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 160px;
+}
+
+.estim .estim1 .estim1Content {
+  max-width: 500px;
+}
+
+.estim .estim2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.estim .estim2 .estim2Box {
+  border: 1px solid var(--white5);
+  padding: 30px;
+  transition: var(--trans);
+}
+
+.estim .estim2 .estim2Box h1 {
+  font-size: 16rem;
+  font-family: var(--ff-oswald);
+  color: var(--white5);
+  margin-top: -15.5rem;
+  transition: var(--trans);
+}
+
+.estim .estim2 .estim2Box:hover h1 {
+  color: var(--orange);
+}
+
+.estim .estim2 .estim2Box:hover {
+  box-shadow: var(--shadow-3);
+}
+
+.estim .estim2 .estim2Box .image {
+  height: 170px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white6);
+  border-radius: 50%;
+  margin-inline: auto;
+}
+
+.estim .estim2 .estim2Box .image img {
+  height: 91px;
+  width: auto;
+}
+
+.estim .estim2 .estim2Box h2 {
+  font-size: 2.2rem;
+  line-height: 26.4px;
+  font-weight: 600;
+  text-align: center;
+  margin-block: 2rem;
+  font-family: var(--ff-oswald);
+  text-transform: capitalize;
+}
+
+.estim .estim2 .estim2Box p {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: var(--ff-rubik);
+  font-size: 1.6rem;
+  line-height: 27.2px;
+  color: var(--gray);
+  text-transform: capitalize;
+}
+
+.estim .estim2 .estim2Box span {
+  margin-inline: auto;
+  width: 70px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--prussian);
+  cursor: pointer;
+}
+
+.estim .estim2 .estim2Box span i {
+  color: var(--prussian);
+}
+
+/* ^^^^^^^^^^^^^^^^^^ MEDIA QUERIES ^^^^^^^^^^^^^^^^^^^*/
+
+@media (max-width: 992px) {
+  .estim .estim1 {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-inline: auto;
+  }
+
+  .estim .estim2 {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .estim .estim2 {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10rem;
+    max-width: 500px;
+    margin-inline: auto;
+  }
+}

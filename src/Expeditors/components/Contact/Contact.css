@@ -1,0 +1,88 @@
+.contact {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.infoBox i {
+  font-size: 28px;
+  color: #ff5e14; /* Your orange theme color */
+}
+
+.infoBox h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #002e5b; /* Dark blue contrast */
+}
+
+.contactForm {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.formGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.contactForm input, .contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+.contactForm input:focus {
+  border-color: #ff5e14;
+}
+.whatsappBtn {
+  background-color: #25D366 !important; /* WhatsApp Green */
+  border: none !important;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.whatsappBtn:hover {
+  background-color: #128C7E !important; /* Darker WhatsApp Green */
+  transform: translateY(-3px);
+}
+
+.whatsappBtn i {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+  .formGroup {
+    grid-template-columns: 1fr;
+  }
+}

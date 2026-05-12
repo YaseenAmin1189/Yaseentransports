@@ -1,0 +1,162 @@
+header {
+  padding: 15px;
+  background: transparent;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 500;
+}
+
+.sideLogo {
+  font-size: 20px;
+  color: #002e5b; /* Or your theme color */
+  font-weight: 800;
+}
+
+.sideNav li a {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+header.scrolled {
+  background-color: var(--sky);
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header nav .logo {
+  font-size: 3.5rem;
+  line-height: 59.5px;
+  font-weight: 700;
+  font-family: var(--ff-oswald);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-family: var(--ff-rubik);
+}
+
+header nav ul li a {
+  font-size: 1.6rem;
+  line-height: 27.2px;
+  transition: var(--trans);
+  text-transform: capitalize;
+}
+
+header nav ul li a:hover {
+  color: var(--orange);
+}
+
+header nav .call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  font-family: var(--ff-rubik);
+}
+
+header nav .call .freeCall p {
+  font-size: 1.4rem;
+  line-height: 16.8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+header nav .call .freeCall a {
+  font-size: 3rem;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+header nav .call i {
+  font-size: 2.7rem;
+}
+
+header nav .call .bar {
+  margin-left: 2rem;
+  display: none;
+}
+
+/* chakra ui */
+.chakra-modal__header.css-9fgtzh {
+  padding: 3rem 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chakra-modal__header.css-9fgtzh .logo {
+  font-size: 3rem;
+  line-height: 51px;
+  font-family: var(--ff-oswald);
+  color: var(--gray);
+}
+
+.chakra-modal__header.css-9fgtzh .cross {
+  font-size: 3rem;
+}
+
+.chakra-modal__body.css-79z5gx .navList {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--ff-rubik);
+  margin-top: 13rem;
+}
+
+.chakra-modal__body.css-79z5gx {
+  padding: 0;
+}
+
+.chakra-modal__body.css-79z5gx .navList li a {
+  display: block;
+  width: 100%;
+  border-top: 1px solid var(--gray2);
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1.6rem;
+  line-height: 27.2px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  transition: var(--trans);
+}
+
+.chakra-modal__body.css-79z5gx .navList li a:hover {
+  color: var(--orange);
+  background-color: var(--white2);
+}
+
+@media (max-width: 992px) {
+  header nav ul {
+    display: none;
+  }
+
+  header nav .call .bar {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  header nav .call .freeCall,
+  header nav .call .fa-phone {
+    display: none;
+  }
+}

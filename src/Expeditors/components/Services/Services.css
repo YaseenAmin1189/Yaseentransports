@@ -1,0 +1,135 @@
+.serviceContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.serviceBox {
+  min-height: 250px; /* Ensures boxes are tall enough to show the icon */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.serviceIconBox {
+  font-size: 45px;
+  color: #ff5e14; /* Your primary orange/red theme color */
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.serviceBox:hover .serviceIconBox {
+  transform: translateY(-5px);
+  color: #002e5b; /* Changes color on hover to your secondary theme color */
+}
+
+.serviceBox h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.viewDetail {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff5e14;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+.service {
+  background-color: var(--white6);
+}
+
+.service .sectionContainer .serviceUpperPart {
+  text-align: center;
+}
+
+.service .serviceContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service .serviceContainer .serviceBox {
+  padding: 30px;
+  background-color: white;
+  border: 1.8rem solid var(--white3);
+  transition: var(--trans);
+}
+
+.service .serviceContainer .serviceBox:hover {
+  border-color: var(--orange);
+}
+
+.service .serviceContainer .serviceBox img {
+  height: 60px;
+  width: auto;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.service .serviceContainer .serviceBox h2 {
+  font-family: var(--ff-oswald);
+  display: flex;
+  margin-bottom: 0.4rem;
+  align-items: baseline;
+  gap: 1.8rem;
+}
+.service .serviceContainer .serviceBox h2 span:nth-of-type(1) {
+  color: var(--orange);
+  font-size: 4rem;
+  line-height: 60px;
+  font-weight: 600;
+}
+.service .serviceContainer .serviceBox h2 span:nth-of-type(2) {
+  color: var(--prussian);
+  font-size: 2.2rem;
+  line-height: 26.4px;
+  font-weight: 600;
+}
+
+.service .serviceContainer .serviceBox p {
+  font-family: var(--ff-rubik);
+  font-size: 1.6rem;
+  line-height: 27.2px;
+  color: var(--gray);
+  margin-bottom: 2.5rem;
+}
+
+.service .serviceContainer .serviceBox a {
+  font-size: 1.8rem;
+  line-height: 30.6px;
+  text-transform: uppercase;
+  color: var(--orange);
+
+  font-family: var(--ff-rubik);
+}
+.service .serviceContainer .serviceBox a::before {
+  content: "\f054";
+  font: var(--fa-font-solid);
+  font-family: "Font Awesome 6 Free";
+  margin-right: 1rem;
+}
+
+/* ^^^^^^^^^^^^^^^^^^ MEDIA QUERIES ^^^^^^^^^^^^^^^^^^^*/
+
+@media (max-width: 992px) {
+  .service .serviceContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .service .serviceContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 305px) {
+  .service .serviceContainer .serviceBox {
+    border-width: 1rem;
+  }
+}
