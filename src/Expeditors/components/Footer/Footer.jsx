@@ -9,7 +9,7 @@ const Footer = () => {
           
           {/* Brand Column */}
           <div className="footerBox">
-            <h2 className="footerLogo">Yaseen Amin <span>Transport</span></h2>
+            <h2 className="footerLogo">Yaseen Amin <span>Transport LLC</span></h2>
             <p className="footerDesc">
               Professional road freight and logistics solutions connecting the UAE 
               to Saudi Arabia, Oman, and the entire GCC region. Safe, fast, and reliable.
