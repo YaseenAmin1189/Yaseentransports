@@ -67,8 +67,8 @@ const Footer = () => {
         <div className="footerBottom">
           <p>© {new Date().getFullYear()} Yaseen Amin Transport LLC. All Rights Reserved.</p>
           <p className="credit">
-            Developed with excellence for the Logistics Industry.
-          </p>
+  Developed with excellence by **Abdullah Naeem** for the Logistics Industry.
+</p>
         </div>
       </div>
     </footer>

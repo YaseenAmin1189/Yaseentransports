@@ -24,9 +24,9 @@ const Projects = () => {
             <h2 className="sectionSubHeader">PROJECTS</h2>
             <h1 className="sectionHeader">Featured Projects</h1>
             <p className="sectionIntro">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry the standard dummy text ever since the when an printer
-              took.
+              Showcasing our successful cross-border logistics operations. 
+            We provide secure and timely transport for industrial, commercial, 
+            and heavy cargo across the GCC.
             </p>
           </div>
           <Swiper
