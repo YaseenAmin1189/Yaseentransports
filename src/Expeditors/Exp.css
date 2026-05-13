@@ -3,6 +3,17 @@
 /*  font-family: 'Oswald', sans-serif;  */
 /* font-family: 'Rubik', sans-serif;  */
 
+html, body {
+  overflow-x: hidden; /* This is the #1 fix for the sidebar issue */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 :root {
   /**
    * colors
@@ -98,25 +109,28 @@ i {
   cursor: pointer;
 }
 
-a,
-img,
-i,
-button,
-span,
-input {
+a, img, i, button, span, input {
   display: block;
-  width: max-content;
+  max-width: 100%; /* Changed from width: max-content */
+}
+
+img {
+  height: auto;
+  max-width: 100%; /* Ensures images never push the screen wide */
+  display: block;
 }
 
 section {
-  padding-block: 120px;
+  padding-block: 80px; /* Reduced from 120px for better mobile feel */
   width: 100%;
+  overflow: hidden;    /* Clips any stray shapes or images */
 }
 
 .sectionContainer {
   max-width: 1210px;
-  padding-inline: 30px;
+  padding-inline: 20px; /* Reduced from 30px for more room on small phones */
   margin: 0 auto;
+  width: 100%;          /* Ensures it doesn't take a fixed width */
 }
 
 .sectionSubHeader {
@@ -195,10 +209,21 @@ section {
   html {
     font-size: 55%;
   }
+  .sectionHeader {
+    font-size: 3.2rem; /* Scaled down from 4.5rem */
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 450px) {
   html {
-    font-size: 52%;
+    font-size: 50%; /* Slightly smaller base font */
+  }
+  .sectionHeader {
+    font-size: 2.6rem; /* Ensures long headings don't break the layout */
+  }
+  .sectionSubHeader {
+    font-size: 2rem;
+    letter-spacing: 1px;
   }
 }

@@ -32,7 +32,7 @@ const Header = () => {
     <>
       <header id="home" className={isScrolled ? "scrolled" : null}>
         <nav>
-          <h1 className="logo">YASEEN AMIN TRANSPORT</h1>
+          <h1 className="logo">YASEEN AMIN TRANSPORT LLC</h1>
 
           <ul className="navList">
             <li>
@@ -80,7 +80,7 @@ const Header = () => {
           <DrawerOverlay />
           <DrawerContent>
             <DrawerHeader>
-              <h1 className="logo">YASEEN AMIN TRANSPORT</h1>
+              <h1 className="logo">YASEEN AMIN TRANSPORT LLC</h1>
               <i
                 onClick={onClose}
                 className="cross fa-regular fa-circle-xmark"
